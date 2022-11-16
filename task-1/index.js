@@ -17,7 +17,7 @@ rl.question("Enter the keyword:", function (keyword) {
   );
   console.log(divider);
 
-  schedule(" */10 * * * * *", async () => {
+  schedule("0 10 * * *", async () => {
     console.log(`Results for ${keyword} keyword query`);
 
     const publishedAfter = getTimeAgo(1, "day");
